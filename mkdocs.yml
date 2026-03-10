@@ -1,8 +1,8 @@
 # Project information
 site_name: THD-Spatial GitHub Template
-site_author: THD-Spatial Group
+site_author: THD-Spatial
 site_description: >-
-  Template repository for open source projects in the THD-Spatial organization
+  Template repository for open source projects in the THD-Spatial GitHub organisation
 site_url: https://THD-Spatial.github.io/GitHub-Template
 
 # Repository
@@ -27,11 +27,14 @@ theme:
     - navigation.prune
     - navigation.tabs
     - navigation.top
+    - navigation.path
     - navigation.tracking
+    - navigation.indexes
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
+    - toc.integrate
   language: en
   palette:
     - media: "(prefers-color-scheme)"
@@ -115,4 +118,4 @@ nav:
 
 # Copyright
 copyright: |
-  &copy; 2026 <a href="https://github.com/THD-Spatial"  target="_blank" rel="noopener">THD-Spatial Group</a>
+  &copy; 2026 <a href="https://github.com/THD-Spatial"  target="_blank" rel="noopener">THD-Spatial</a>
