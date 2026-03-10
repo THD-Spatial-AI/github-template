@@ -57,7 +57,6 @@ Useful resource:
 
 - [Choose a License](https://choosealicense.com/)
 
-
 ### 3. CONTRIBUTING & Code of Conduct (recommended, required for community-facing repos)
 
 1. Add a `CONTRIBUTING.md` file to explain how contributors should report issues, propose changes, and submit pull requests.
@@ -151,7 +150,6 @@ https://<org-name>.github.io/<repo-name>/
 (e.g., documentation for this repo can be accessed at <https://thd-spatial.github.io/github-template/>)
 
 ---
-
 
 ### 6. Optional but useful files
 
