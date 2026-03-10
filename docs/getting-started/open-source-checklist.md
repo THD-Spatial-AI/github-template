@@ -9,8 +9,8 @@ This checklist is designed to be practical and easy to review. It separates **re
 ## Review Summary
 
 | Section | Requirement Level | Status | Notes |
-|---|---|---|---|
-| [Essential Requirements](#essential-requirements-required) | Required | Pending | Must be completed before public release |
+| ------- | ----------------- | ------ | ----- |
+| [Essential Requirements](#essential-requirements) | Required | Pending | Must be completed before public release |
 | [Data Management (Git LFS)](#data-management-required-if-applicable) | Required if applicable | Pending | Only if repository contains large files |
 | [Optional but Recommended Files](#optional-but-recommended-files-recommended) | Recommended | Pending | Strongly encouraged for public/community repos |
 | [Quality Checks](#quality-checks-required) | Required | Pending | Final review before publishing |
@@ -18,20 +18,18 @@ This checklist is designed to be practical and easy to review. It separates **re
 
 ---
 
-## Essential Requirements (Required)
+## Essential Requirements
 
 Make sure the following essential requirements are completed before making your repository public.
 
-Quick links: [License](#license) · [README](#readme) · [Contributing Guidelines](#contributing-guidelines) · [Code of Conduct](#code-of-conduct)
+Quick links: [LICENSE](#license) · [README](#readme) · [CONTRIBUTING](#contributing) · [CODE_OF_CONDUCT](#code_of_conduct)
 
-### License
+### LICENSE
 
-- [ ] `LICENSE` file present in repository root
+- [ ] [LICENSE](https://github.com/THD-Spatial/github-template/blob/main/LICENSE) file present in repository root
 - [ ] Appropriate license chosen (see [Choose a License](https://choosealicense.com/))
-- [ ] Correct license text added
+- [ ] Replace license content with correct license text for chosen license type
 - [ ] License committed to repository
-
-> **Important:** Without a license, you are **not allowed** to make your repository public under **THD-Spatial**.
 
 ### README
 
@@ -47,7 +45,7 @@ Quick links: [License](#license) · [README](#readme) · [Contributing Guideline
 - [ ] Contribution guidance referenced (e.g. `CONTRIBUTING.md`)
 - [ ] README uses clear Markdown formatting
 
-### Contributing Guidelines
+### CONTRIBUTING
 
 - [ ] `CONTRIBUTING.md` file present in repository root
 - [ ] Issue reporting process documented
@@ -56,16 +54,21 @@ Quick links: [License](#license) · [README](#readme) · [Contributing Guideline
 - [ ] Commit message guidance included (recommended)
 - [ ] `CONTRIBUTING.md` linked from `README.md`
 
-### Code of Conduct
+### CODE_OF_CONDUCT
 
 - [ ] `CODE_OF_CONDUCT.md` file present in repository root
 - [ ] Code of conduct chosen (e.g. [Contributor Covenant](https://www.contributor-covenant.org/))
 - [ ] Contact method for reporting issues included
 - [ ] `CODE_OF_CONDUCT.md` linked from `README.md` or documentation
 
+!!! warning
+
+    Without files listed above, your repository does not meet the minimum requirements for public release under the **THD-Spatial** organization. Please complete all essential items before proceeding to make your repository public.
 ---
 
 ## Data Management (Required if applicable)
+
+If your repository contains large files (e.g. datasets, binaries, media, generated assets), you must use Git LFS to manage them.
 
 ### Git LFS (Large File Storage)
 
