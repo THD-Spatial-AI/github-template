@@ -12,6 +12,7 @@ This checklist is designed to be practical and easy to review. It separates **re
 | ------- | ----------------- | ------ | ----- |
 | [Essential Requirements](#essential-requirements) | Required | Pending | Must be completed before public release |
 | [Data Management (Git LFS)](#data-management-required-if-applicable) | Required if applicable | Pending | Only if repository contains large files |
+| [Attribution](#attribution-required-if-applicable) | Required if applicable | Pending | Only if project uses third-party assets requiring attribution |
 | [Optional but Recommended Files](#optional-but-recommended-files-recommended) | Recommended | Pending | Strongly encouraged for public/community repos |
 | [Quality Checks](#quality-checks-required) | Required | Pending | Final review before publishing |
 | [Final Steps](#final-steps-required) | Required | Pending | Verify repository works from a fresh clone |
@@ -83,6 +84,25 @@ Complete this section if your repository contains large files (e.g. datasets, bi
 
 > **Note:** Files tracked by Git LFS are not included in release assets by default.
 > If needed, enable **Include Git LFS objects in archives** in repository settings.
+
+---
+
+## Attribution (Required if applicable)
+
+If your project uses third-party components, assets, or generated code that require attribution (e.g. UI components from Figma, design systems, libraries under Apache 2.0, BSD, or CC BY licenses), include an `ATTRIBUTION.md` file.
+
+### ATTRIBUTION
+
+- [ ] `ATTRIBUTION.md` file created in repository root
+- [ ] Third-party component or asset names listed
+- [ ] Source platform or author identified for each entry
+- [ ] License type specified for each entry
+- [ ] Links to original sources included
+- [ ] Any required attribution text preserved as-is from the original license/notice
+
+!!! note
+
+    If no third-party assets requiring attribution are used, this section can be skipped.
 
 ---
 

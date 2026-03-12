@@ -12,6 +12,7 @@ This repository is a template for projects under the `THD-Spatial` GitHub group.
 - `LICENSE` (required before making a repository public)
 - `docs/` (documentation pages for naming conventions and open-source readiness)
 - `mkdocs.yml` (MkDocs configuration for documentation site generation)
+- `ATTRIBUTION.md` (third-party attribution, if applicable)
 
 ## Before making a repository public
 
@@ -151,7 +152,21 @@ https://<org-name>.github.io/<repo-name>/
 
 ---
 
-### 6. Optional but useful files
+### 6. Attribution (required if applicable)
+
+If your project uses third-party components, assets, or generated code that require attribution (e.g. UI components from Figma, design systems, libraries under Apache 2.0, BSD, or CC BY licenses), include an `ATTRIBUTION.md` file in the repository root.
+
+At minimum, the attribution file should include:
+
+- component or asset name
+- source platform or author
+- license type
+- link to the original source
+
+> [!IMPORTANT]
+> If a third-party asset's license requires attribution, you are legally required to include it. Do not remove attribution notices from generated or imported code.
+
+### 7. Optional but useful files
 
 Depending on the project, consider adding:
 
@@ -161,6 +176,7 @@ Depending on the project, consider adding:
 - `.github/pull_request_template.md` — PR template
 - `SECURITY.md` — vulnerability reporting policy
 - `SUPPORT.md` — support and contact guidance
+- `ATTRIBUTION.md` — third-party attribution and credits
 
 > [!CAUTION]
 > **TO ALL MAINTAINERS:** Please review the open-source readiness checklist and ensure all required files are included before making a repository public. This helps set clear expectations for users and contributors, and ensures legal clarity around usage and contributions.
