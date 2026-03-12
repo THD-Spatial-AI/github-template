@@ -35,140 +35,19 @@ All repositories under `THD-Spatial` should follow a consistent naming conventio
 
 ## Required files for public repositories
 
-### 1. README (required)
-
 > [!IMPORTANT]
-> Every repository must include a `README.md` file that explains the project purpose, setup, and usage.
+> Repositories under `THD-Spatial` must include the following files before being made public. See the [Open Source Checklist](docs/getting-started/open-source-checklist.md) for the full list.
 
-At minimum, the README should include:
+| File | Requirement | Purpose |
+|------|-------------|---------|
+| `LICENSE` | Required | Legal permission for use, modification, and distribution ([Choose a License](https://choosealicense.com/)) |
+| `README.md` | Required | Project overview, setup, and usage instructions |
+| `CONTRIBUTING.md` | Required for community repos | Issue reporting, PR process, coding standards |
+| `CODE_OF_CONDUCT.md` | Required for community repos | Community expectations ([Contributor Covenant](https://www.contributor-covenant.org/)) |
+| `ATTRIBUTION.md` | Required if applicable | Third-party credits when using assets that require attribution |
+| `.gitattributes` | Required if using LFS | Git LFS tracking for large files ([Git LFS docs](https://git-lfs.com/)) |
 
-- project title and description
-- purpose / scope
-- installation and usage instructions
-- contribution guidance (or link to `CONTRIBUTING.md`)
-- license information (or link to `LICENSE`)
-
-### 2. License (required)
-
-A public repository must include a license. Without a license, others do not have clear legal permission to use, modify, or distribute the code.
-> [!IMPORTANT]
-> Repositories under `THD-Spatial` must include a `LICENSE` file before being made public.
-
-Useful resource:
-
-- [Choose a License](https://choosealicense.com/)
-
-### 3. CONTRIBUTING & Code of Conduct (recommended, required for community-facing repos)
-
-1. Add a `CONTRIBUTING.md` file to explain how contributors should report issues, propose changes, and submit pull requests.
-
-2. Add a `CODE_OF_CONDUCT.md` file to help set expectations for respectful collaboration and create a welcoming project environment.
-
-A common choice:
-
-- [Contributor Covenant](https://www.contributor-covenant.org/)
-
-### 4. Git LFS for large files
-
-> [!IMPORTANT]
-> Use Git LFS for large files (especially datasets, binaries, media, and generated assets) to keep the Git repository manageable. For more information, official platform documentation can be found at [Git LFS](https://git-lfs.com/).
-
-Basic setup:
-
-```bash
-git lfs install
-git lfs track "*.psd"
-git lfs track "*.zip"
-...
-```
-
-Then commit `.gitattributes` and your files as usual.
-
-> [!NOTE]
-> If you publish releases and want Git LFS files included in release archives, enable:
->
-> **Settings → Archives → Include Git LFS objects in archives**
-> ![GitHub release archives setting](docs/assets/getting-started/archives_setting_screenshot.png)
-
-### 5. Documentation (MkDocs)
-
-This template uses [MkDocs](https://www.mkdocs.org/) with the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme for project documentation.
-
-Documentation source files are located in the `docs/` directory.
-
-### Run documentation locally
-
-1. Install dependencies:
-
-    ```bash
-    pip install -r docs/requirements.txt
-    ```
-
-2. Start the local docs server:
-
-    ```bash
-    mkdocs serve
-    ```
-
-3. Then open:
-
-    ```bash
-    http://localhost:8000/
-    ```
-
-    > [!NOTE]
-    > port may vary based on configuration*
-
-### Hosting documentation with GitHub Pages
-
-This repository deploys documentation to **GitHub Pages** using a GitHub Actions workflow:
-
-- Workflow: `.github/workflows/docs.yml`
-
-The workflow builds the MkDocs site and publishes it automatically when changes are pushed to the configured branch (for example, `main`).
-
-> [!TIP]
-> If your repository is private, then the workflow will fail without GitHub Pro or Enterprise. In that case you disable the workflow temporarily until you are ready to make the repository public. To disable the workflow, go to the **Actions** tab, select the workflow, and click "Disable workflow" in the right sidebar.
-> ![disable workflow screenshot](docs/assets/getting-started/disable-workflow.png)
-
-#### Typical deployment flow
-
-1. Update documentation files in `docs/` (and/or `mkdocs.yml`)
-2. Commit and push changes to the default branch
-3. GitHub Actions runs the docs workflow
-4. The site is deployed to GitHub Pages automatically
-
-#### Notes
-
-- Make sure **GitHub Pages** is enabled in repository settings
-- The Pages source should be set to **GitHub Actions**
-- If using a project repository site, the published URL is typically:
-
-```bash
-https://<org-name>.github.io/<repo-name>/
-```
-
-(e.g., documentation for this repo can be accessed at <https://thd-spatial.github.io/github-template/>)
-
----
-
-### 6. Attribution (required if applicable)
-
-If your project uses third-party components, assets, or generated code that require attribution (e.g. UI components from Figma, design systems, libraries under Apache 2.0, BSD, or CC BY licenses), include an `ATTRIBUTION.md` file in the repository root.
-
-At minimum, the attribution file should include:
-
-- component or asset name
-- source platform or author
-- license type
-- link to the original source
-
-> [!IMPORTANT]
-> If a third-party asset's license requires attribution, you are legally required to include it. Do not remove attribution notices from generated or imported code.
-
-### 7. Optional but useful files
-
-Depending on the project, consider adding:
+### Optional but useful files
 
 - `CHANGELOG.md` — track notable changes
 - `CODEOWNERS` — define review ownership
@@ -176,9 +55,14 @@ Depending on the project, consider adding:
 - `.github/pull_request_template.md` — PR template
 - `SECURITY.md` — vulnerability reporting policy
 - `SUPPORT.md` — support and contact guidance
-- `ATTRIBUTION.md` — third-party attribution and credits
+
+## Documentation (MkDocs)
+
+This template uses [MkDocs](https://www.mkdocs.org/) with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for project documentation. Source files are in `docs/`.
+
+For setup instructions (local development, GitHub Pages deployment, and workflow configuration), see the [Documentation Setup Guide](docs/getting-started/documentation-setup.md).
 
 > [!CAUTION]
-> **TO ALL MAINTAINERS:** Please review the open-source readiness checklist and ensure all required files are included before making a repository public. This helps set clear expectations for users and contributors, and ensures legal clarity around usage and contributions.
+> **TO ALL MAINTAINERS:** Please review the [open-source readiness checklist](docs/getting-started/open-source-checklist.md) and ensure all required files are included before making a repository public.
 >
 > This template is intended to be practical and easy to adapt. Keep it lightweight, take some time to remove sections you do not need **(Including this one)**, and update links/paths if you rename files in `docs/`.

@@ -115,6 +115,7 @@ nav:
   - Home: index.md
   - Checklist: getting-started/open-source-checklist.md
   - Repository Naming: getting-started/repository-naming.md
+  - Documentation Setup: getting-started/documentation-setup.md
 
 # Copyright
 copyright: |
