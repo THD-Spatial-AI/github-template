@@ -28,5 +28,3 @@ jobs:
             mkdocs-material-
       - run: pip install -r docs/requirements.txt
       - run: mkdocs gh-deploy --force
-theme:
-  name: material
