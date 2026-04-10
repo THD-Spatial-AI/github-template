@@ -1,10 +1,10 @@
-# THD-Spatial GitHub Template
+# THD-Spatial-AI GitHub Template
 
-Welcome to the THD-Spatial GitHub Template documentation! This template helps group members create standardized, open-source ready repositories.
+Welcome to the THD-Spatial-AI GitHub Template documentation! This template helps group members create standardized, open-source ready repositories.
 
 ## Quick Overview
 
-This template repository provides a complete starting point for open-sourcing projects under the THD-Spatial organization. It includes essential files, guidelines, and a comprehensive checklist to ensure your project meets all requirements.
+This template repository provides a complete starting point for open-sourcing projects under the THD-Spatial-AI organization. It includes essential files, guidelines, and a comprehensive checklist to ensure your project meets all requirements.
 
 ## What's Included
 
@@ -29,7 +29,7 @@ This template repository provides a complete starting point for open-sourcing pr
 ## Key Requirements
 
 !!! warning "Before Going Public"
-    Your repository **must** include a [LICENSE](getting-started/open-source-checklist.md#license) file before it can be made public under the THD-Spatial organization.
+    Your repository **must** include a [LICENSE](getting-started/open-source-checklist.md#license) file before it can be made public under the THD-Spatial-AI organization.
 
 ### Essential Files
 
@@ -49,4 +49,4 @@ This template repository provides a complete starting point for open-sourcing pr
 
 ## Support
 
-For questions or issues with this template, please [open an issue](https://github.com/thd-spatial/github-template/issues) or contact the THD-Spatial group administrators.
+For questions or issues with this template, please [open an issue](https://github.com/thd-spatial/github-template/issues) or contact the THD-Spatial-AI group administrators.

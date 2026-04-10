@@ -1,9 +1,9 @@
 
-# THD-Spatial Repository Template
+# THD-Spatial-AI Repository Template
 
 [![MkDocs](https://github.com/THD-Spatial/github-template/actions/workflows/docs.yml/badge.svg)](https://thd-spatial.github.io/github-template)
 
-This repository is a template for projects under the `THD-Spatial` GitHub group. It provides a basic structure, documentation, and guidance to help you prepare repositories for internal collaboration and open-source release.
+This repository is a template for projects under the `THD-Spatial-AI` GitHub group. It provides a basic structure, documentation, and guidance to help you prepare repositories for internal collaboration and open-source release.
 
 ## What this template includes
 
@@ -17,7 +17,7 @@ This repository is a template for projects under the `THD-Spatial` GitHub group.
 
 ## Before making a repository public
 
-Use the open-source readiness checklist before publishing a repository under `THD-Spatial`.
+Use the open-source readiness checklist before publishing a repository under `THD-Spatial-AI`.
 
 - **Checklist:** [Open Source Checklist](docs/getting-started/open-source-checklist.md)
 

@@ -208,7 +208,7 @@ These files are not always required, but they improve project quality, collabora
 
 ## Repository Ready for Open Source
 
-Once all required items are completed, the repository meets the THD-Spatial minimum readiness standard for public release.
+Once all required items are completed, the repository meets the THD-Spatial-AI minimum readiness standard for public release.
 
 - **Date completed:** `DD.MM.YYYY`
 - **Reviewed by:** `Name(s)`
@@ -221,4 +221,4 @@ If you have questions about any checklist item:
 
 - Review the template `README.md`
 - Check the documentation pages in `docs/`
-- Ask the THD-Spatial maintainers/reviewers
+- Ask the THD-Spatial-AI maintainers/reviewers
