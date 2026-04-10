@@ -1,4 +1,4 @@
-# Documentation Setup
+# MkDocs Setup
 
 This template uses [MkDocs](https://www.mkdocs.org/) with the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme for project documentation.
 
@@ -91,7 +91,7 @@ Then commit `.gitattributes` and your files as usual.
 
 ## Attribution
 
-If your project uses third-party components, assets, or generated code that require attribution (e.g. UI components from Figma, design systems, libraries under Apache 2.0, BSD, or CC BY licenses), include an `ATTRIBUTION.md` file in the repository root.
+If your project uses third-party components, assets, or generated code that require attribution (e.g. UI components from Figma, design systems, libraries under Apache 2.0, BSD, or CC BY licenses), include an `ATTRIBUTIONS.md` file in the repository root.
 
 At minimum, the attribution file should include:
 

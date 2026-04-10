@@ -12,7 +12,8 @@ This repository is a template for projects under the `THD-Spatial` GitHub group.
 - `LICENSE` (required before making a repository public)
 - `docs/` (documentation pages for naming conventions and open-source readiness)
 - `mkdocs.yml` (MkDocs configuration for documentation site generation)
-- `ATTRIBUTION.md` (third-party attribution, if applicable)
+- `ATTRIBUTIONS.md` (third-party attribution, if applicable)
+- `CITATION.cff` (citation metadata for research projects)
 
 ## Before making a repository public
 
@@ -44,7 +45,8 @@ All repositories under `THD-Spatial` should follow a consistent naming conventio
 | `README.md` | Required | Project overview, setup, and usage instructions |
 | `CONTRIBUTING.md` | Required for community repos | Issue reporting, PR process, coding standards |
 | `CODE_OF_CONDUCT.md` | Required for community repos | Community expectations ([Contributor Covenant](https://www.contributor-covenant.org/)) |
-| `ATTRIBUTION.md` | Required if applicable | Third-party credits when using assets that require attribution |
+| `ATTRIBUTIONS.md` | Required if applicable | Third-party credits when using assets that require attribution |
+| `CITATION.cff` | Recommended for research | Machine-readable citation metadata ([Citation File Format](https://citation-file-format.github.io/)) |
 | `.gitattributes` | Required if using LFS | Git LFS tracking for large files ([Git LFS docs](https://git-lfs.com/)) |
 
 ### Optional but useful files

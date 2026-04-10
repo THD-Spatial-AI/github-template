@@ -13,6 +13,7 @@ This checklist is designed to be practical and easy to review. It separates **re
 | [Essential Requirements](#essential-requirements) | Required | Pending | Must be completed before public release |
 | [Data Management (Git LFS)](#data-management-required-if-applicable) | Required if applicable | Pending | Only if repository contains large files |
 | [Attribution](#attribution-required-if-applicable) | Required if applicable | Pending | Only if project uses third-party assets requiring attribution |
+| [Citation](#citation-recommended-for-research-projects) | Recommended | Pending | For research projects — enables proper academic citation |
 | [Optional but Recommended Files](#optional-but-recommended-files-recommended) | Recommended | Pending | Strongly encouraged for public/community repos |
 | [Quality Checks](#quality-checks-required) | Required | Pending | Final review before publishing |
 | [Final Steps](#final-steps-required) | Required | Pending | Verify repository works from a fresh clone |
@@ -89,11 +90,11 @@ Complete this section if your repository contains large files (e.g. datasets, bi
 
 ## Attribution (Required if applicable)
 
-If your project uses third-party components, assets, or generated code that require attribution (e.g. UI components from Figma, design systems, libraries under Apache 2.0, BSD, or CC BY licenses), include an `ATTRIBUTION.md` file.
+If your project uses third-party components, assets, or generated code that require attribution (e.g. UI components from Figma, design systems, libraries under Apache 2.0, BSD, or CC BY licenses), include an `ATTRIBUTIONS.md` file.
 
 ### ATTRIBUTION
 
-- [ ] `ATTRIBUTION.md` file created in repository root
+- [ ] `ATTRIBUTIONS.md` file created in repository root
 - [ ] Third-party component or asset names listed
 - [ ] Source platform or author identified for each entry
 - [ ] License type specified for each entry
@@ -103,6 +104,30 @@ If your project uses third-party components, assets, or generated code that requ
 !!! note
 
     If no third-party assets requiring attribution are used, this section can be skipped.
+
+---
+
+## Citation (Recommended for research projects)
+
+If your project is related to research or uses open-source tools and data that should be cited, include a `CITATION.cff` file. GitHub automatically detects this file and shows a "Cite this repository" button on the repository page.
+
+For full specification details, see [Citation File Format](https://citation-file-format.github.io/).
+
+### CITATION.cff
+
+- [ ] `CITATION.cff` file created in repository root
+- [ ] `cff-version` set to `1.2.0`
+- [ ] Project title specified
+- [ ] At least one author listed (with name and affiliation)
+- [ ] ORCID included for each author (if available)
+- [ ] License field matches the repository `LICENSE` file
+- [ ] Repository URL included
+- [ ] Version and release date set
+- [ ] File validates against the CFF schema (use [cff-validator](https://github.com/citation-file-format/cff-initializer-javascript))
+
+!!! tip
+
+    You can generate a `CITATION.cff` file interactively using the [CFF Initializer](https://citation-file-format.github.io/cff-initializer-javascript/).
 
 ---
 
