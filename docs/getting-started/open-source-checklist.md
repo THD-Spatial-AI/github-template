@@ -1,6 +1,6 @@
 # Open Source Readiness Checklist
 
-Use this checklist before making a repository public under the **THD-Spatial** group.
+Use this checklist before making a repository public under the **THD-Spatial-AI** group.
 
 This checklist is designed to be practical and easy to review. It separates **required**, **conditional**, and **recommended** items so you can focus on what matters first.
 
@@ -28,7 +28,7 @@ Quick links: [LICENSE](#license) · [README](#readme) · [CONTRIBUTING](#contrib
 
 ### LICENSE
 
-- [ ] [LICENSE](https://github.com/THD-Spatial/github-template/blob/main/LICENSE) file present in repository root
+- [ ] [LICENSE](https://github.com/THD-Spatial-AI/github-template/blob/main/LICENSE) file present in repository root
 - [ ] Appropriate license chosen (see [Choose a License](https://choosealicense.com/))
 - [ ] Replace license content with correct license text for chosen license type
 - [ ] License committed to repository
@@ -65,7 +65,7 @@ Quick links: [LICENSE](#license) · [README](#readme) · [CONTRIBUTING](#contrib
 
 !!! warning
 
-    Without files listed above, your repository does not meet the minimum requirements for public release under the **THD-Spatial** organization. Please complete all essential items before proceeding to make your repository public.
+    Without files listed above, your repository does not meet the minimum requirements for public release under the **THD-Spatial-AI** organization. Please complete all essential items before proceeding to make your repository public.
 ---
 
 ## Data Management (Required if applicable)

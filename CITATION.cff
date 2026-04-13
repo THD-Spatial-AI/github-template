@@ -9,9 +9,9 @@ authors:
   - family-names: "Last Name"
     given-names: "First Name"
     orcid: "https://orcid.org/0000-0000-0000-0000"
-    affiliation: "THD-Spatial"
-repository-code: "https://github.com/THD-Spatial/repo-name"
-url: "https://THD-Spatial.github.io/city2tabula"
+    affiliation: "THD-Spatial-AI"
+repository-code: "https://github.com/THD-Spatial-AI/repo-name"
+url: "https://THD-Spatial-AI.github.io/repo-name"
 license: MIT
 version: "0.1.0"
 date-released: "2026-01-01"

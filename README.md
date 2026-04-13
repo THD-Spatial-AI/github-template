@@ -30,14 +30,14 @@ The checklist covers:
 
 ## Repository naming
 
-All repositories under `THD-Spatial` should follow a consistent naming convention.
+All repositories under `THD-Spatial-AI` should follow a consistent naming convention.
 
 - **Guidelines:** [Repository Naming Guidelines](docs/getting-started/repository-naming.md)
 
 ## Required files for public repositories
 
 > [!IMPORTANT]
-> Repositories under `THD-Spatial` must include the following files before being made public. See the [Open Source Checklist](docs/getting-started/open-source-checklist.md) for the full list.
+> Repositories under `THD-Spatial-AI` must include the following files before being made public. See the [Open Source Checklist](docs/getting-started/open-source-checklist.md) for the full list.
 
 | File | Requirement | Purpose |
 |------|-------------|---------|

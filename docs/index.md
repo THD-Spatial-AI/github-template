@@ -49,4 +49,4 @@ This template repository provides a complete starting point for open-sourcing pr
 
 ## Support
 
-For questions or issues with this template, please [open an issue](https://github.com/thd-spatial/github-template/issues) or contact the THD-Spatial-AI group administrators.
+For questions or issues with this template, please [open an issue](https://github.com/THD-Spatial-AI/github-template/issues) or contact the THD-Spatial-AI group administrators.

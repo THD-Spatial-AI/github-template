@@ -1,13 +1,13 @@
 # Project information
 site_name: THD-Spatial-AI GitHub Template
-site_author: THD-Spatial
+site_author: THD-Spatial-AI
 site_description: >-
   Template repository for open source projects in the THD-Spatial-AI GitHub organisation
-site_url: https://THD-Spatial.github.io/GitHub-Template
+site_url: https://THD-Spatial-AI.github.io/GitHub-Template
 
 # Repository
 repo_name: THD-Spatial/GitHub-Template
-repo_url: https://github.com/THD-Spatial/GitHub-Template
+repo_url: https://github.com/THD-Spatial-AI/GitHub-Template
 edit_uri: edit/main/docs/
 
 # Theme configuration
@@ -65,7 +65,7 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - git-revision-date-localized:
       enable_creation_date: true
-      
+
 # Extensions
 markdown_extensions:
   - abbr
@@ -119,4 +119,4 @@ nav:
 
 # Copyright
 copyright: |
-  &copy; 2026 <a href="https://github.com/THD-Spatial"  target="_blank" rel="noopener">THD-Spatial</a>
+  &copy; 2026 <a href="https://github.com/THD-Spatial-AI"  target="_blank" rel="noopener">THD-Spatial-AI</a>
