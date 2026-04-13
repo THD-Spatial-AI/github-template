@@ -1,7 +1,7 @@
 
 # THD-Spatial-AI Repository Template
 
-[![MkDocs](https://github.com/THD-Spatial/github-template/actions/workflows/docs.yml/badge.svg)](https://thd-spatial.github.io/github-template)
+[![MkDocs](https://github.com/THD-Spatial-AI/github-template/actions/workflows/docs.yml/badge.svg)](https://thd-spatial-ai.github.io/github-template)
 
 This repository is a template for projects under the `THD-Spatial-AI` GitHub group. It provides a basic structure, documentation, and guidance to help you prepare repositories for internal collaboration and open-source release.
 
