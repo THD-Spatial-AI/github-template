@@ -211,6 +211,9 @@ def process_repo(repo):
     if repo.get("archived"):
         print("    skip: archived")
         return
+    if repo.get("fork"):
+        print("    skip: fork")
+        return
     if full == TEMPLATE_REPO:
         print("    skip: template repo")
         return
