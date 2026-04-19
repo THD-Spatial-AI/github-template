@@ -62,7 +62,7 @@ def get_file(repo, path, ref="HEAD"):
         data = gh_get(f"/repos/{repo}/contents/{path}", params={"ref": ref})
         return base64.b64decode(data["content"]).decode("utf-8"), data["sha"]
     except requests.HTTPError as e:
-        if e.response.status_code == 404:
+        if e.response.status_code in (404, 403):
             return None, None
         raise
 
