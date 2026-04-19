@@ -26,10 +26,11 @@ theme:
     - navigation.instant
     - navigation.prune
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.path
     - navigation.tracking
-    - navigation.indexes
+    - navigation.sections
     - search.highlight
     - search.share
     - search.suggest

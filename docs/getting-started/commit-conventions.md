@@ -67,15 +67,39 @@ BREAKING CHANGE: all endpoints now return WGS84 instead of ETRS89
 | `feat: Add new endpoint.` | `feat: add new endpoint` |
 | `WIP` | `chore: scaffold route handler` |
 
-## Using AI to fix commit messages
+## Fixing a failed commit lint check
 
-If your PR fails the commit lint check, you can ask an AI assistant to fix it:
+When the **Validate commit messages** check fails on your PR, follow the steps below depending on how many commits need fixing.
 
-> *"My commit message `update greeting message in main function` failed the conventional commits check. Please rewrite it in the correct format."*
-
-The AI will suggest something like `feat(main): update greeting message` which you can apply with:
+### Fix the most recent commit
 
 ```bash
-git commit --amend -m "feat(main): update greeting message"
+git commit --amend -m "feat(scope): your corrected message"
 git push --force-with-lease
 ```
+
+### Fix multiple commits
+
+Use an interactive rebase to reword each failing commit. The workflow log tells you exactly which commit SHAs need fixing.
+
+```bash
+# Replace N with the number of commits in your PR
+git rebase -i HEAD~N
+```
+
+In the editor that opens, change `pick` to `reword` for each commit you want to fix, save and close. Git will pause at each one so you can enter the corrected message. Then push:
+
+```bash
+git push --force-with-lease
+```
+
+### Using AI to rewrite messages
+
+If you are unsure how to rewrite a message, paste it into an AI assistant:
+
+> *"My commit message `update greeting message in main function` failed the conventional commits check. The allowed types are: feat, fix, docs, style, refactor, perf, test, chore. Please rewrite it in the correct format `type(scope): subject`."*
+
+The AI will suggest something like `feat(main): update greeting message`.
+
+!!! warning "Force push requires branch to be up to date"
+    After `--force-with-lease`, the PR will automatically re-run the commit lint check. If someone else pushed to the branch in the meantime, the force push will be rejected — pull first with `git pull --rebase` and then push again.
