@@ -117,6 +117,8 @@ nav:
   - Repository Naming: getting-started/repository-naming.md
   - Documentation Setup: getting-started/documentation-setup.md
   - Legal Sync: getting-started/legal-sync.md
+  - Branch Rules: getting-started/branch-rules.md
+  - Commit Conventions: getting-started/commit-conventions.md
 
 # Copyright
 copyright: |
