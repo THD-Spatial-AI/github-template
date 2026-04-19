@@ -34,11 +34,20 @@ jobs:
 
       - run: pip install requests
 
-      - name: Run sync
+      - name: Sync THD-Spatial-AI
         env:
-          SYNC_PAT: ${{ secrets.SYNC_PAT }}
+          SYNC_PAT: ${{ secrets.SYNC_LEGAL_PAT_THD }}
           COPYRIGHT_HOLDER: ${{ steps.copyright.outputs.holder }}
-          ORGS: THD-Spatial-AI,enerplanet
+          ORGS: THD-Spatial-AI
+          DRY_RUN: ${{ inputs.dry_run || 'false' }}
+          TEMPLATE_REPO: ${{ github.repository }}
+        run: python .github/scripts/sync_legal.py
+
+      - name: Sync enerplanet
+        env:
+          SYNC_PAT: ${{ secrets.SYNC_LEGAL_PAT_ENERPLANET }}
+          COPYRIGHT_HOLDER: ${{ steps.copyright.outputs.holder }}
+          ORGS: enerplanet
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
           TEMPLATE_REPO: ${{ github.repository }}
         run: python .github/scripts/sync_legal.py
