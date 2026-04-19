@@ -37,8 +37,8 @@ In this template repo go to **Settings → Secrets and variables → Actions →
 
 | Secret name | Value |
 |---|---|
-| `SYNC_LEGAL_PAT_THD` | Token scoped to `THD-Spatial-AI` |
-| `SYNC_LEGAL_PAT_ENERPLANET` | Token scoped to `enerplanet` |
+| `SYNC_PAT_THD` | Token scoped to `THD-Spatial-AI` |
+| `SYNC_PAT_ENERPLANET` | Token scoped to `enerplanet` |
 
 ## Triggering the sync
 

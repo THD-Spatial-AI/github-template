@@ -36,7 +36,7 @@ jobs:
 
       - name: Sync THD-Spatial-AI
         env:
-          SYNC_PAT: ${{ secrets.SYNC_LEGAL_PAT_THD }}
+          SYNC_PAT: ${{ secrets.SYNC_PAT_THD }}
           COPYRIGHT_HOLDER: ${{ steps.copyright.outputs.holder }}
           ORGS: THD-Spatial-AI
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
@@ -45,7 +45,7 @@ jobs:
 
       - name: Sync enerplanet
         env:
-          SYNC_PAT: ${{ secrets.SYNC_LEGAL_PAT_ENERPLANET }}
+          SYNC_PAT: ${{ secrets.SYNC_PAT_ENERPLANET }}
           COPYRIGHT_HOLDER: ${{ steps.copyright.outputs.holder }}
           ORGS: enerplanet
           DRY_RUN: ${{ inputs.dry_run || 'false' }}
