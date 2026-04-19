@@ -57,6 +57,12 @@ def gh_put(path, data):
     return resp.json()
 
 
+def gh_patch(path, data):
+    resp = requests.patch(f"{API}{path}", headers=HEADERS, json=data)
+    resp.raise_for_status()
+    return resp.json()
+
+
 def get_file(repo, path, ref="HEAD"):
     try:
         data = gh_get(f"/repos/{repo}/contents/{path}", params={"ref": ref})
@@ -89,7 +95,8 @@ def create_branch(repo, name, sha):
         gh_post(f"/repos/{repo}/git/refs", {"ref": f"refs/heads/{name}", "sha": sha})
     except requests.HTTPError as e:
         if e.response.status_code == 422:
-            pass  # already exists
+            # Branch exists — reset to current base so file SHAs are fresh
+            gh_patch(f"/repos/{repo}/git/refs/heads/{name}", {"sha": sha, "force": True})
         else:
             raise
 
